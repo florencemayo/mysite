@@ -1,0 +1,32 @@
+body {
+}
+
+
+.phones {
+  list-style: none;
+}
+
+tr.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+suggestions {
+	background-color: lightblue;
+}
+
+tr.specs > td,th{
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+.message {
+	border: 1px solid red;
+	height: 30px;
+	background-color: lightpink;
+	width : 500px;
+}
+
