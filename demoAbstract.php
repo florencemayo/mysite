@@ -86,5 +86,5 @@ echo '<br/>$address_business_copy is'.
 
 
 
-echo '</div></div>';
+echo '</div></div></div>';
 include("inc/footer.php");

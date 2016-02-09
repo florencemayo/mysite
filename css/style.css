@@ -1,9 +1,8 @@
-body {
-}
-
-
 .phones {
   list-style: none;
+  float:left; 
+  display:inline;
+  padding-top: 20px;
 }
 
 tr.specs {
@@ -11,10 +10,6 @@ tr.specs {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-suggestions {
-	background-color: lightblue;
 }
 
 tr.specs > td,th{
@@ -28,5 +23,13 @@ tr.specs > td,th{
 	height: 30px;
 	background-color: lightpink;
 	width : 500px;
+}
+
+.clearfix { clear: both; }
+
+.footer {
+  background-color: black ;
+  padding-left: 10px;
+  margin-top: 20px;
 }
 

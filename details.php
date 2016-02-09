@@ -25,13 +25,14 @@ include("inc/header.php"); ?>
   
   <div class="wrapper">
 
+    <h1>
     <div class="breadcrumb">
       <a href="catalog.php">Full Catalog</a>
         &gt; <a href="catalog.php?cat=<?php echo strtolower($item["category"]); ?> ">
        <?php echo $item["category"]; ?> </a>
        &gt;  <?php echo $item["name"]; ?>
     </div>
-
+    </h1>
     <table panel panel-default>
     <tr>
     <td>
@@ -79,4 +80,6 @@ include("inc/header.php"); ?>
 
   </div>
 
-</div>  
+</div> 
+ 
+ <?php include("inc/footer.php"); ?>

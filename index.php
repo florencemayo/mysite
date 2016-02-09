@@ -1,13 +1,13 @@
 <?php 
 include("inc/data.php");
 include("inc/functions.php");
-$pageTitle="Personal Media Library";
+$pageTitle="Telephones";
 $section= null;
 include("inc/header.php"); ?>
  
-  <div class="section catalog random">
+  <div class="section random clearfix">
     <div class="wrapper">
-      <h2>May we suggest something</h2>
+      <h2 style= "text-align:center;">May we suggest something</h2>
        <ul class="items">
             <?php
             /*

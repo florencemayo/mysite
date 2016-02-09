@@ -24,19 +24,22 @@ if ($_GET["cat"]=="motorola") {
 }
 include("inc/header.php"); ?>
 
-<div class="section catalog page">
+<div class="section catalog clearfix page">
   <div class="wrapper">  
         
-         <h1 class='thumbnail'> <?php 
+         <h1> <?php 
 
         if ($section != null) {
+          echo "<div class='breadcrumb'>";
         	echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
         }
-         echo $pageTitle ?> </h1>
-
+         echo $pageTitle."</div>"; ?>
+         
+         </h1>
+         
          <ul class="items">
             <?php
-         	$categories=array_category($catalog,$section);
+         	$categories=array_category($catalog, $section);
          	foreach ($categories as $id) {
             echo get_item_html($id,$catalog[$id]);
             }
@@ -44,6 +47,6 @@ include("inc/header.php"); ?>
          </ul>
     </div>
  </div>
- 
 
- <?php include("inc/footer.php"); ?>
+</div> <!-- end of the content-->  
+<?php include("inc/footer.php"); ?>

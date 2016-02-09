@@ -1,9 +1,9 @@
 <?php
    function get_item_html($id,$item){
-   $output = "<li class='phones'><a class='thumbnail' href='details.php?id=".$id."'><img src='"
+   $output = "<li class='phones'><a href='details.php?id=".$id."'><img src='"
                   .$item["img"].  "' alt='"
                   .$item["name"]. "'/>"
-                  ."<p>View Details</p>"
+                  ."<p style='text-align:center'><b>View Details</b></p>"
                   ."</a></li>";
    return $output;
            }

@@ -10,12 +10,16 @@
    <title><?php echo $pageTitle; ?></title>
   </head>
   <body class="container">
+  <div class="wrapper">  
    
-   <div class="header">
+ <div class="header">
    
-   <div class="wrapper">
-     
-     <ul class="nav nav-tabs">
+   <nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+   <div class="navbar-header">
+      <a class="navbar-brand" href="index.php">Mysite</a>
+    </div>
+   <ul class="nav navbar-nav">
                  <li class="motorola <?php if ($section=="motorola") { echo " on"; } ?>"><a href="catalog.php?cat=motorola">Motorola</a></li>
                  <li class="samsung <?php if ($section=="samsung") { echo " on"; } ?>"><a href="catalog.php?cat=samsung">Samsung</a></li>
                  <li class="t-mobile <?php if ($section=="t-mobile") { echo " on"; } ?>"><a href="catalog.php?cat=t-mobile">T-mobile</a></li>
@@ -33,8 +37,8 @@
                    </ul>
                </li>
       </ul>
-
+    </div>
+  </nav>
     </div>
 
-  </div>
-    <div id="content">
+  <div id="content">

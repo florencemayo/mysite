@@ -122,5 +122,5 @@ $address_business= new AddressBusiness(Array(
 echo "<div class='panel panel-default'>".$address_business ->display()."</div>";
 echo '<tt><pre>'.var_export($address_business,TRUE).'</pre></tt>'; 
 
-echo '</div></div>';
+echo '</div></div></div>';
 include("inc/footer.php");

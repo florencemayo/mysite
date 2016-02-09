@@ -59,8 +59,11 @@ include("inc/header.php"); ?>
 
 <div class="section page">
 	<div class="wrapper">
-	
-	<h1> Suggest a Media Item </h1>
+	<div class="panel panel-default">
+	<div class="panel-heading">
+	 <h2> Suggest a Media Item </h2>
+   </div>
+   <div class="panel-body">
 	<?php if (isset($_GET["status"]) && $_GET["status"]=="thanks") {
             echo "<p>Thanks for the email! I&rsquo; will check out your suggestion shortly</p>";
     } else { 
@@ -117,5 +120,8 @@ include("inc/header.php"); ?>
 	</form>
 	<?php } ?>
     </div>
- </div>
+</div>
+</div>
+</div>
+</div>
  <?php include("inc/footer.php"); ?>
